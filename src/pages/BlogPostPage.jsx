@@ -55,7 +55,7 @@ export default function BlogPostPage() {
       </Helmet>
 
       <article className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 pt-28 pb-16 md:pt-32">
+        <div className="mx-auto max-w-7xl px-4 pt-20 pb-16 md:pt-24">
           <header className="max-w-3xl border-b border-neutral-200 pb-8">
             <p className="text-sm font-semibold uppercase tracking-wider text-primary">
               <Link to="/blog" className="hover:text-primary-dark">

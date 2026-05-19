@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import DesignCredit from "./components/DesignCredit";
 import StickyMobileCTA from "./components/StickyMobileCTA";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -22,6 +23,8 @@ const BlogPostPage = lazy(() => import("./pages/BlogPostPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const QuotePage = lazy(() => import("./pages/QuotePage"));
 const CareersPage = lazy(() => import("./pages/CareersPage"));
+const GalleryPage = lazy(() => import("./pages/GalleryPage"));
+const ClientelePage = lazy(() => import("./pages/ClientelePage"));
 const PrivacyPolicyPage = lazy(() => import("./pages/PrivacyPolicyPage"));
 const TermsPage = lazy(() => import("./pages/TermsPage"));
 
@@ -53,6 +56,8 @@ export default function App() {
               <Route path="/services/mobile-patrol" element={<PatrolServicesPage />} />
               <Route path="/services/personal-protection" element={<PersonalProtectionPage />} />
               <Route path="/industries" element={<IndustriesPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/clientele" element={<ClientelePage />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/blog/:slug" element={<BlogPostPage />} />
               <Route path="/contact" element={<ContactPage />} />
@@ -65,6 +70,7 @@ export default function App() {
         </div>
         <Footer />
         <WhatsAppFloat />
+        <DesignCredit />
         <StickyMobileCTA />
       </div>
     </BrowserRouter>

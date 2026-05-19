@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
-import { Eye, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { BUSINESS } from "../data/config";
 import { services } from "../data/services";
 
 const quickLinks = [
   { to: "/", label: "Home" },
+  { to: "/services", label: "Services" },
   { to: "/about", label: "About Us" },
-  { to: "/industries", label: "Industries" },
-  { to: "/blog", label: "Blog" },
-  { to: "/careers", label: "Careers" },
-  { to: "/contact", label: "Contact" },
+  { to: "/gallery", label: "Gallery" },
+  { to: "/clientele", label: "Clientele" },
+  { to: "/careers", label: "Jobs" },
+  { to: "/blog", label: "Blogs" },
+  { to: "/contact", label: "Contact Us" },
   { to: "/get-quote", label: "Get a Quote" },
 ];
 
@@ -31,11 +33,14 @@ export default function Footer() {
     <footer className="bg-navy text-gray-300">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2">
-            <Eye className="h-8 w-8 text-accent-gold" />
-            <span className="text-xl font-bold text-white">
-              Eagle Eye <span className="text-accent-yellow">Watch</span>
-            </span>
+          <div className="flex min-h-[72px] items-center md:min-h-[84px]">
+            <img
+              src="/media/logo.png"
+              alt="Eagle Eye Watch Security"
+              className="h-[72px] w-auto md:h-[84px]"
+              width={84}
+              height={84}
+            />
           </div>
           <p className="mt-4 text-sm leading-relaxed text-gray-300">
             Eagle Eye Watch is a leading security agency in Bangalore — and a trusted security company in
@@ -111,8 +116,21 @@ export default function Footer() {
       </div>
 
       <div className="bg-[#060F24] px-4 py-4">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 text-center text-xs text-gray-400 md:flex-row md:text-left">
-          <p>© 2025 {BUSINESS.name}. All rights reserved.</p>
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center text-xs text-gray-400 md:flex-row md:items-center md:gap-4 md:text-left">
+          <div className="flex flex-col gap-1 md:flex-row md:flex-wrap md:items-center md:gap-x-3 md:gap-y-1">
+            <p>© 2025 {BUSINESS.name}. All rights reserved.</p>
+            <p>
+              Website made by{" "}
+              <a
+                href="https://blackmattertech.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                BlackMatter Technologies Pvt. Ltd.
+              </a>
+            </p>
+          </div>
           <div className="flex gap-4">
             <Link to="/privacy-policy" className="hover:text-white">
               Privacy Policy

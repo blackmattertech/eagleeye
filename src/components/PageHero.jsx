@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function PageHero({ title, subtitle, breadcrumb }) {
   return (
-    <section className="relative border-b border-neutral-200 bg-primary-light px-4 pb-16 pt-28 md:pb-20 md:pt-32">
+    <section className="relative border-b border-neutral-200 bg-primary-light px-4 pb-16 pt-20 md:pb-20 md:pt-24">
       <motion.div
         className="relative mx-auto max-w-7xl"
         initial={{ opacity: 0, y: 20 }}

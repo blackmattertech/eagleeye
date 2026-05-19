@@ -54,7 +54,7 @@ export default function LocalBusinessSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: BUSINESS.name,
     url: SITE_URL,
-    logo: `${SITE_URL}/favicon.svg`,
+    logo: `${SITE_URL}/media/logo.png`,
     sameAs: Object.values(BUSINESS.social).filter((s) => s && !s.includes("PLACEHOLDER")),
     contactPoint: {
       "@type": "ContactPoint",
