@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --color-primary: #1a3fb5;
+  --color-primary-dark: #0d2a8a;
+  --color-primary-light: #eef2ff;
+  --color-navy: #0d1b3e;
+  --color-navy-light: #1a2f5a;
+  --color-accent-yellow: #f5c518;
+  --color-accent-coral: #e8503a;
+  --color-accent-teal: #3ecfb8;
+  --color-accent-gold: #d4af37;
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #4b5563;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  color: #0d1b3e;
+  letter-spacing: -0.02em;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark;
+}
+
+.btn-secondary {
+  @apply inline-flex min-h-[44px] items-center justify-center rounded-full border-2 border-primary bg-transparent px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary-light;
+}
+
+.btn-yellow {
+  @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-accent-yellow px-6 py-3 text-sm font-bold text-navy transition-opacity hover:opacity-90;
+}
+
+/* Bento cards */
+.bento-card {
+  @apply relative overflow-hidden rounded-[20px] transition-transform duration-300 hover:scale-[1.02];
+}
+
+.bento-brackets::before,
+.bento-brackets::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.bento-brackets::before {
+  top: 14px;
+  left: 14px;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+}
+
+.bento-brackets::after {
+  bottom: 14px;
+  right: 14px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+}
+
+.bento-blue {
+  @apply bg-primary text-white;
+}
+
+.bento-yellow {
+  @apply bg-accent-yellow text-navy;
+}
+
+.bento-coral {
+  @apply bg-accent-coral text-white;
+}
+
+.bento-teal {
+  @apply bg-accent-teal text-navy;
+}
+
+.bento-white {
+  @apply border border-neutral-200 bg-white text-navy;
+}
+
+.section-divider {
+  @apply mx-auto mt-4 h-1 w-16 rounded-full bg-primary;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a3fb5;
+  border-radius: 4px;
+}

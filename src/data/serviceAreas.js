@@ -1,0 +1,22 @@
+/** Hyperlocal SEO — one line per locality for Contact page & crawlers */
+export const serviceAreas = [
+  "Security guards in Whitefield Bangalore — IT parks, corporate campuses, and residential layouts",
+  "Security services in Koramangala — offices, retail, restaurants, and apartment communities",
+  "Security agency in Electronic City Bangalore — factories, tech corridors, and gated societies",
+  "Security guards in Indiranagar Bangalore — commercial hubs, boutiques, and mixed-use sites",
+  "Security services in HSR Layout — startups, co-working spaces, and housing societies",
+  "Security agency in Marathahalli — ORR-adjacent offices, retail, and residential towers",
+  "Security guards in Hebbal Bangalore — hospitals, hotels, and North Bengaluru corridors",
+  "Security services in JP Nagar — residential societies and neighbourhood commercial clusters",
+  "Security agency in Jayanagar Bangalore — established retail, residential, and clinic zones",
+  "Security guards on Bannerghatta Road — schools, hospitals, and apartment communities",
+  "Security services on Outer Ring Road Bangalore — IT parks, warehouses, and logistics hubs",
+  "Security agency on Sarjapur Road — tech campuses, villas, and expanding residential belts",
+  "Security guards in Yelahanka Bangalore — airport logistics, housing, and industrial pockets",
+  "Security services in Kengeri — West Bangalore campuses, apartments, and commercial lanes",
+  "Security agency near me Bangalore — same-day quotes when you search for local guard deployment",
+  "24 hour security guards near me Bangalore — emergency cover and rapid replacement from our control room",
+  "Security company near Whitefield — supervisors based locally for faster incident response",
+  "Best security agency near Koramangala — PSARA-licensed teams for offices and societies",
+  "Security services near Electronic City — patrol and static guarding for South Bengaluru sites",
+];
