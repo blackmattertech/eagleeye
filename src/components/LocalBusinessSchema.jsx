@@ -19,7 +19,7 @@ export default function LocalBusinessSchema() {
       streetAddress: BUSINESS.address,
       addressLocality: "Bangalore",
       addressRegion: "Karnataka",
-      postalCode: "560001",
+      postalCode: "560003",
       addressCountry: "IN",
     },
     geo: {

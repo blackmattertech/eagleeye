@@ -21,7 +21,7 @@ export const homeServiceShowcase = [
   },
   {
     id: "event-security",
-    image: "/media/servicescards/3.jpeg",
+    image: "/media/servicescards/3.png",
     title: "Event security",
     description:
       "Crowd management, bouncers & VIP security for events across Bangalore.",
@@ -30,7 +30,7 @@ export const homeServiceShowcase = [
   },
   {
     id: "corporate-security",
-    image: "/media/servicescards/4.jpeg",
+    image: "/media/servicescards/4.png",
     title: "Corporate security",
     description:
       "IT parks, offices & tech campuses — access control, perimeter patrol & guard management.",
@@ -40,7 +40,7 @@ export const homeServiceShowcase = [
   },
   {
     id: "residential-security",
-    image: "/media/servicescards/5.jpeg",
+    image: "/media/servicescards/5.png",
     title: "Residential security",
     description:
       "Gated communities, apartments & villas — trusted guards for housing societies in Bangalore.",
@@ -58,7 +58,7 @@ export const homeServiceShowcase = [
   },
   {
     id: "housekeeping-services",
-    image: "/media/servicescards/7.jpeg",
+    image: "/media/servicescards/7.png",
     title: "Housekeeping services",
     description:
       "Trained housekeeping staff for offices, apartments, hotels & commercial spaces — daily cleaning, deep cleaning & facility upkeep across Bangalore.",

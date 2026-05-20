@@ -47,9 +47,6 @@ export default function Footer() {
             Bangalore and Bengaluru for guards, CCTV, events, and corporate protection. We deliver professional
             security services Bangalore businesses and communities rely on across Karnataka.
           </p>
-          <p className="mt-2 text-xs text-gray-500">
-            GST: {BUSINESS.gst} | License: {BUSINESS.licenseNo}
-          </p>
         </div>
 
         <div>

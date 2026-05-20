@@ -20,6 +20,8 @@ import StatsBar from "../components/StatsBar";
 import TestimonialsCarousel from "../components/TestimonialsCarousel";
 import CTABanner from "../components/CTABanner";
 import SectionHeading from "../components/SectionHeading";
+import AboutMarqueeSection from "../components/AboutMarqueeSection";
+import GallerySection from "../components/GallerySection";
 import ServiceShowcaseRow from "../components/ServiceShowcaseRow";
 import { homeServiceShowcase } from "../data/homeServiceShowcase";
 import { blogPosts } from "../data/blogPosts";
@@ -171,6 +173,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <AboutMarqueeSection />
+
       <section className="bg-neutral-100 px-4 py-16 md:py-24" aria-labelledby="why-heading">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
@@ -196,6 +200,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <GallerySection />
 
       <section className="bg-white px-4 py-16 md:py-20" aria-labelledby="industries-heading">
         <div className="mx-auto max-w-7xl">
