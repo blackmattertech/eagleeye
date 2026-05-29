@@ -4,6 +4,7 @@ import { Link2 } from "lucide-react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import SEOHead from "../components/SEOHead";
 import CTABanner from "../components/CTABanner";
+import BlogSectionBody from "../components/BlogSectionBody";
 import { getPostBySlug } from "../data/blogPosts";
 import { SITE_URL } from "../data/config";
 
@@ -74,6 +75,16 @@ export default function BlogPostPage() {
                 })}
               </time>
             </p>
+            {post.image && (
+              <div className="mt-8 overflow-hidden rounded-2xl border border-neutral-200">
+                <img
+                  src={post.image}
+                  alt=""
+                  className="aspect-[21/9] w-full object-cover"
+                  loading="eager"
+                />
+              </div>
+            )}
           </header>
 
           <div className="mt-12 grid gap-12 lg:grid-cols-[240px_1fr]">
@@ -126,7 +137,9 @@ export default function BlogPostPage() {
                 <section key={section.id} id={section.id} className="mt-12 scroll-mt-28">
                   <h2 className="text-2xl font-bold text-navy md:text-3xl">{section.heading}</h2>
                   <div className="section-divider !mx-0 !mt-3 !mb-6" />
-                  <p className="leading-relaxed text-gray-600">{section.content}</p>
+                  <div className="leading-relaxed text-gray-600">
+                    <BlogSectionBody section={section} />
+                  </div>
                 </section>
               ))}
             </div>

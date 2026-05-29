@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
-import DesignCredit from "./components/DesignCredit";
 import StickyMobileCTA from "./components/StickyMobileCTA";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -70,7 +69,6 @@ export default function App() {
         </div>
         <Footer />
         <WhatsAppFloat />
-        <DesignCredit />
         <StickyMobileCTA />
       </div>
     </BrowserRouter>

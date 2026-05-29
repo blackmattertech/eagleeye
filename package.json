@@ -6,13 +6,17 @@
   "scripts": {
     "predev": "node scripts/generate-gallery-manifest.mjs",
     "prebuild": "node scripts/generate-gallery-manifest.mjs",
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "embla-carousel-auto-scroll": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.39.0",
     "gsap": "^3.15.0",
     "lucide-react": "^1.16.0",

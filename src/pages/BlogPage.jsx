@@ -23,14 +23,31 @@ export default function BlogPage() {
       <main className="bg-neutral-100">
         <div className="mx-auto max-w-7xl px-4 py-12 md:py-16">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.map((post, i) => (
+            {blogPosts
+              .slice()
+              .sort((a, b) => new Date(b.date) - new Date(a.date))
+              .map((post, i) => (
               <article
                 key={post.slug}
-                className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+                className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
               >
-                <div className={`flex aspect-video items-center justify-center ${thumbBg[i]}`}>
-                  <Shield className={`h-12 w-12 ${i === 1 ? "text-navy/30" : "text-white/40"}`} aria-hidden="true" />
-                </div>
+                <Link to={`/blog/${post.slug}`} className="block">
+                  <div className={`flex aspect-video items-center justify-center overflow-hidden ${thumbBg[i % thumbBg.length]}`}>
+                    {post.image ? (
+                      <img
+                        src={post.image}
+                        alt=""
+                        className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <Shield
+                        className={`h-12 w-12 ${i === 1 ? "text-navy/30" : "text-white/40"}`}
+                        aria-hidden="true"
+                      />
+                    )}
+                  </div>
+                </Link>
                 <div className="p-6">
                   <time className="text-xs font-semibold uppercase tracking-wider text-primary" dateTime={post.date}>
                     {new Date(post.date).toLocaleDateString("en-IN", {
@@ -44,7 +61,7 @@ export default function BlogPage() {
                       {post.title}
                     </Link>
                   </h2>
-                  <p className="mt-2 text-sm text-gray-600">{post.excerpt}</p>
+                  <p className="mt-2 line-clamp-3 text-sm text-gray-600">{post.excerpt}</p>
                   <p className="mt-2 text-xs text-gray-400">{post.readTime}</p>
                   <Link
                     to={`/blog/${post.slug}`}

@@ -114,20 +114,7 @@ export default function Footer() {
 
       <div className="bg-[#060F24] px-4 py-4">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center text-xs text-gray-400 md:flex-row md:items-center md:gap-4 md:text-left">
-          <div className="flex flex-col gap-1 md:flex-row md:flex-wrap md:items-center md:gap-x-3 md:gap-y-1">
-            <p>© 2025 {BUSINESS.name}. All rights reserved.</p>
-            <p>
-              Website made by{" "}
-              <a
-                href="https://blackmattertech.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white"
-              >
-                BlackMatter Technologies Pvt. Ltd.
-              </a>
-            </p>
-          </div>
+          <p>© 2025 {BUSINESS.name}. All rights reserved.</p>
           <div className="flex gap-4">
             <Link to="/privacy-policy" className="hover:text-white">
               Privacy Policy

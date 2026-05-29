@@ -54,19 +54,13 @@ export default function ServiceShowcaseRow({ item }) {
     </div>
   );
 
+  const imageOrder = item.imageOnLeft ? "order-1 lg:order-1" : "order-1 lg:order-2";
+  const textOrder = item.imageOnLeft ? "order-2 lg:order-2" : "order-2 lg:order-1";
+
   return (
     <article className="grid items-center gap-8 lg:grid-cols-2 lg:gap-14">
-      {item.imageOnLeft ? (
-        <>
-          {imageBlock}
-          {textBlock}
-        </>
-      ) : (
-        <>
-          {textBlock}
-          {imageBlock}
-        </>
-      )}
+      <div className={imageOrder}>{imageBlock}</div>
+      <div className={textOrder}>{textBlock}</div>
     </article>
   );
 }
